@@ -5,4 +5,4 @@ format: html
 
 # Quarto
 
-[link]()
+[link](my-firt-quarto-domunent.html)
