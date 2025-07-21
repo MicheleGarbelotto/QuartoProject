@@ -6,4 +6,4 @@ format: html
 
 # Quarto
 
-[link](FirstQuartoFIle.html)
+[link](FirstQuartoFile.html)
