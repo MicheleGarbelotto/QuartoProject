@@ -44,7 +44,7 @@ This is a github [link](https://quarto.org)
 
 ## This is a beutiful image
 
-![Image](C:\Users\LG\OneDrive\Documenti\CORSI\R e Quarto\Quarto\QuartoProject\FirstQuartoFile_files\img)
+![Img](C:\Users\LG\OneDrive\Documenti\CORSI\R e Quarto\Quarto\QuartoProject\img)
 
 ## Superscript and subscrip
 
