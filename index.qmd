@@ -10,7 +10,7 @@ format:
       dark: superhero
 ---
 
-# Quarto
+# Alcuni link
 
 [link](FirstQuartoFile.html)
 
@@ -20,4 +20,3 @@ format:
 
 [Chunkus](ChunksStuff.html)
 
-Ciao: buongiorno
