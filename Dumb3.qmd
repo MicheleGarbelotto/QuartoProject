@@ -1,0 +1,126 @@
+---
+title: "Dumbs"
+format: 
+  html: 
+   toc: true
+   toc-location: left
+   grid:
+    sidebar-width: 200px
+    body-width: 900px
+    margin-width: 400px
+    gutter-width: 1.5rem
+citation-location: margin
+lang: it      
+bibliography: references.bib
+---
+
+# Dude
+
+:::{.column-margin}
+Bell'equazione dude
+
+![](img/DajeEquation.png)
+:::
+
+::: {.panel-tabset}
+
+## Aim
+
+La mira: centra il bersaglio
+
+## Methods
+
+Methods: AK-47
+
+## Results
+
+Risultato: carcere
+
+:::
+
+# Brov
+
+`ggplot2` is an R [@rsoft] package developed by [@ggplot]. @epifania2024 published an interesting paper on Linear Mixed Effects Models. 
+
+# Man
+
+::: {.grid}
+
+::: {.g-col-4}
+
+ma che bella colonna, cazzo!
+
+:::
+::: {.g-col-4}
+
+
+:::
+
+::: {.g-col-4}
+
+ma che bella colonna, cazzo!
+
+:::
+
+:::
+
+
+
+:::: {.columns}
+
+
+::: {.column width="20%"}
+
+ma che bella colonna, cazzo!
+
+:::
+
+::: {.column width="60%"}
+
+:::
+
+::: {.column width="20%"}
+
+ma che bella colonna, cazzo!
+:::
+
+::::
+
+
+# G
+
+::: {.callout-warning collapse="true"}
+## g and brov average interaction
+
+"Oh brovvv, ascolta il G.
+Te lo dico col cuore e col cappuccio calato:
+se lei visualizza e non risponde…
+non è ghosting, è che ha paura del tuo potenziale, fraté. 🔥💯
+
+Noi non ci innamoriamo, brov…
+noi ci concentriamo.
+Sul cash, sul grind, sulla gloria.
+
+Tipo oggi ho visto il mio riflesso in vetrina…
+gli ho detto:
+‘continua così king, un giorno ci compra pure quella vetrina’. 🕶️💸
+
+E ricordati brov:
+se la vita ti dà limoni…
+fanne un business, apri un franchising e chiamalo
+“Lemonade by G & Brov™” 🍋😎
+
+Stay real, stay up.
+Ci becchiamo in alto, mai in basso.
+Pace, rispetto…
+e Wi-Fi potente. 💥📶"**
+
+:::
+
+:::{.column-margin}
+Brov and g having fun
+
+![](img/Afghan_mujahideen.jpg)
+
+
+
