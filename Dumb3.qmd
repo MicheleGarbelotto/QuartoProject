@@ -40,7 +40,43 @@ Risultato: carcere
 
 # Brov
 
-`ggplot2` is an R [@rsoft] package developed by [@ggplot]. @epifania2024 published an interesting paper on Linear Mixed Effects Models. 
+📖 Storia del Brov che Chilla un Tot
+C’era una volta un brov, chiamato Brov Supreme, che chilla così tanto che il time.sleep(∞) l’ha inventato lui.
+Il brov non corre. Plotta.
+E mica con Paint...
+No, no, il brov usa ggplot2, il pacchetto R [@rsoft] sviluppato da [@ggplot].
+Perché se non plotti con stile, stai solo buttando punti a caso. 🎯📊
+
+Un giorno, mentre chilla al bar università con una RedBull in una mano e l’RStudio aperto nell’altra, arriva @epifania2024 e gli dice:
+
+“Fratè, hai letto il mio paper sugli Linear Mixed Effects Models?”
+
+Il brov sorseggia, alza un sopracciglio, e risponde:
+
+“L’ho letto, l’ho capito…
+e poi l’ho trasformato in un meme con devianza spiegata a 3 cifre decimali. 🔥📉”
+
+Il brov?
+Chilla con significatività p < 0.001.
+Fa modelli lineari giusto per sport,
+e quando gli dicono "sei fuori standard",
+lui risponde:
+
+“I’m a random effect, baby.”
+
+Quando tutti vanno fuori di testa con l’homoscedasticità,
+lui dice:
+
+“Relax, brov. Le residuals devono respirare.”
+
+E mentre il resto della classe sta ancora cercando di capire se usare lm() o lmer(),
+lui sta già testando gli slope randomici con stile e con calma zen.
+
+MORALE DELLA STORIA:
+Non cercare di diventare come Brov Supreme.
+Fai il tuo modello.
+Ma se vuoi chillare un tot...
+usa ggplot2 e credi in te come @epifania2024 crede nei suoi mixed models.
 
 # Man
 
@@ -115,12 +151,13 @@ Ci becchiamo in alto, mai in basso.
 Pace, rispetto…
 e Wi-Fi potente. 💥📶"**
 
-:::
 
 :::{.column-margin}
 Brov and g having fun
 
 ![](img/Afghan_mujahideen.jpg)
+
+:::
 
 
 
