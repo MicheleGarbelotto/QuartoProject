@@ -1,0 +1,32 @@
+---
+title: "DataStuff"
+data: 22/07/2025
+format: 
+  html:
+    self-contained: true
+    toc: true                 
+    toc-location: left      
+    theme:
+      light: minty 
+---
+```{r}
+data = read.csv("QuartoData/dataset.csv")
+```
+
+```{r}
+# chunk 1: show the code
+#| echo: true
+head(data)
+```
+
+```{r}
+#chunk 2: do not show the code
+#| echo: false
+str(data)
+```
+
+```{r}
+#chunk 3: show the fenced code
+#| echo: fenced
+summary(data)
+```

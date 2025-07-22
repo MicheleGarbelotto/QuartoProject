@@ -1,5 +1,6 @@
 ---
 title: "Dummy brovs/dudes/gs"
+data: 22/07/2025
 format: 
   html: 
    toc: true
