@@ -7,6 +7,6 @@ format: html
 
 [link](FirstQuartoFile.html)
 
-[Gugus](GugusTrilogyFile.qmd)
+[Gugus](GugusTrilogyFile.html)
 
 Ciao: buonasera
