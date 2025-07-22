@@ -1,13 +1,12 @@
 ---
-title: "index"
-theme: Jekyll
+title: "ReamMeStuff"
 format: html
 ---
 
-# Quarto
+## Quarto
 
 [link](FirstQuartoFile.html)
 
 [Gugus](GugusTrilogyFile.qmd)
 
-Ciao: buongiorno
+Ciao: buonasera
