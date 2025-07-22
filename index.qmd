@@ -1,7 +1,14 @@
 ---
 title: "index"
 theme: Jekyll
-format: html
+format: 
+  html:
+    self-contained: true
+    toc: true                 
+    toc-location: left      
+    theme:
+      light: minty 
+      dark: superhero
 ---
 
 # Quarto
