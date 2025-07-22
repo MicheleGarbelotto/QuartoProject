@@ -10,7 +10,8 @@ format:
     theme:
       light: minty 
       dark: superhero
-lang: it                 
+lang: it      
+bibliography: references.bib
 ---
 
 ## Quarto
@@ -49,3 +50,7 @@ This is a github [link](https://quarto.org)
 ## Superscript and subscrip
 
 ciao = buongiorno^2^ + buonasera~1~
+
+## citation
+
+@rsoft
