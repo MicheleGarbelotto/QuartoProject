@@ -17,7 +17,7 @@ bibliography: references.bib
 # Dude
 
 :::{.column-margin}
-Bell'equazione dude
+Dude's aim equation:
 
 ![](img/DajeEquation.png)
 :::
