@@ -12,6 +12,7 @@ execute:
   echo: false
   message: false
   warning: false
+code-annotations: hover
 ---
 
 ```{r}
@@ -78,7 +79,7 @@ E' corretto affermare che il plot @fig-TFTstats hitta forte, ma non hitta forte 
 :::
 
 
-# Summary
+# Summary TFT data (margin stuff + 1 code annotation)
 
 ```{r}
 #| label: tbl-tabellus
@@ -115,19 +116,19 @@ ggplot(mtcars, aes(mpg, hp)) +
 ```
 
 ```{r}
-#| fig-width: 10
-#| fig-height: 7
-#| fig-align: center
+#| tbl-column: margin
+#| echo: TRUE
 
-library(knitr)
-library(kableExtra)
+kable(head(cars))                 # <1>
 
-kable(head(cars)) %>%
-  kable_styling(font_size = 18, full_width = TRUE)
-
-ggplot(mtcars, aes(mpg, hp)) +
-  geom_point(aes(size = gear)) +
-  geom_smooth() +
-  theme(text = element_text(size = 16))
-
+ggplot(mtcars, aes(mpg, hp)) +    # <2>
+  geom_point(aes(size = gear)) +  # <2>
+  geom_smooth()                   # <2>
 ```
+1. Tavola di TFT
+2. Plot di TFT
+
+# TFT executibilix (inline executable code)
+
+Questa è la media di game settimanali `r mean(mtcars$gear)`.
+La media è stata calcolata attraverso la seguente funzione: `mean(mtcars$gear)`.
