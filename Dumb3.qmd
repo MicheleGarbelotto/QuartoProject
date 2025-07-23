@@ -2,7 +2,8 @@
 title: "Dummy brovs/dudes/gs"
 data: 22/07/2025
 format: 
-  html: 
+  html:
+   self-contained: true
    toc: true
    toc-location: left
    grid:
@@ -13,6 +14,7 @@ format:
 citation-location: margin
 lang: it      
 bibliography: references.bib
+
 ---
 
 # Dude
