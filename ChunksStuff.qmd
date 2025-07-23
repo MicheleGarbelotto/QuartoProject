@@ -13,20 +13,25 @@ format:
 data = read.csv("QuartoData/dataset.csv")
 ```
 
+chunk 1: show the code
 ```{r}
-# chunk 1: show the code
 #| echo: true
 head(data)
 ```
 
+chunk 2: do not show the code
 ```{r}
-#chunk 2: do not show the code
 #| echo: false
 str(data)
 ```
 
+chunk 3: show the fenced code
 ```{r}
-#chunk 3: show the fenced code
 #| echo: fenced
 summary(data)
 ```
+
+
+
+
+

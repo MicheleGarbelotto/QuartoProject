@@ -25,7 +25,7 @@ Nel *cuore* di una città che non dorme mai, tra vicoli dimenticati dal tempo e 
        1. Gugus Terzo
           - Fine genealogia
 
-##GUGUS Pic
+#GUGUS Pic
 
 ![EquazioneDajeGugus: questa equazione è un equazione, quindi è un **equazione**](img/DajeEquation.png)
 
