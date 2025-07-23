@@ -17,6 +17,8 @@ bibliography: references.bib
 
 # Dude
 
+saddddasdasdasdasd
+
 :::{.column-margin}
 Dude's aim equation:
 
@@ -129,7 +131,7 @@ ma che bella colonna, cazzo!
 ::: {.callout-warning collapse="true"}
 ## g and brov average interaction
 
-"Oh brovvv, ascolta il G.
+Oh brovvv, ascolta il G.
 Te lo dico col cuore e col cappuccio calato:
 se lei visualizza e non risponde…
 non è ghosting, è che ha paura del tuo potenziale, fraté. 🔥💯
@@ -150,7 +152,7 @@ fanne un business, apri un franchising e chiamalo
 Stay real, stay up.
 Ci becchiamo in alto, mai in basso.
 Pace, rispetto…
-e Wi-Fi potente. 💥📶"**
+e Wi-Fi potente. 💥📶
 
 
 :::{.column-margin}
@@ -159,6 +161,7 @@ Brov and g having fun
 ![](img/Afghan_mujahideen.jpg)
 
 :::
+
 
 
 
