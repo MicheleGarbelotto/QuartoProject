@@ -1,5 +1,5 @@
 ---
-title: "Gra-fico"
+title: "Le mie stats di TFT"
 data: 23/07/2025
 format: 
   html:
@@ -8,6 +8,7 @@ format:
     toc-location: left      
     theme:
       light: minty 
+lang: ja
 ---
 
 ```{r}
@@ -28,17 +29,48 @@ library(ggplot2)
 
 
 ```{r}
+#| lst-label: lst-TFTstatsPlot
+#| lst-cap: questo è il codice utilizzato per plottare
 #| code-fold: true
 #| echo: true
 #| out-width: 90%
 #| fig-align: center
 #| fig-cap: Queste sono le mie stats di TFT plottate
 #| fig-cap-location: margin
-#| label: TFTstats
-#| code-line-numbers: "|2|3|4|5|6"
+#| label: fig-TFTstats
 ggplot(mtcars,                                   
        aes(hp, mpg, color = factor(am))) +       
   geom_point() +
   geom_smooth(formula = y ~ x, method = "loess") +
   theme(legend.position = 'bottom')
 ```
+
+I will now show you my actual data regarding my TFT games.
+
+::: {.panel-tabset}
+
+## Tabella carina
+
+
+```{r}
+# kableExtra
+
+library(kableExtra)
+kable(mtcars) %>%
+  scroll_box(height = "450px", width = "100%")
+```
+
+## Tabella più carina
+
+
+```{r}
+# DT
+library(DT)
+datatable(mtcars)
+```
+
+:::
+
+::: {.callout-warning collapse="true"}
+E' corretto affermare che il plot @fig-TFTstats hitta forte, ma non hitta forte quanto il codice stesso @lst-TFTstatsPlot
+:::
