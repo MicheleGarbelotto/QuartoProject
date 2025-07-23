@@ -8,11 +8,13 @@ format:
     toc-location: left      
     theme:
       light: minty 
-lang: ja
+execute: 
+  echo: false
+  message: false
+  warning: false
 ---
 
 ```{r}
-#| echo: false
 #| out-width: 90%
 #| fig-align: center
 #| fig-cap: TFT random screenshot
@@ -22,7 +24,6 @@ knitr::include_graphics("img/TFTlul.png")
 ```
 
 ```{r}
-#| echo: false
 data = read.csv("QuartoData/dataset.csv")
 library(ggplot2)
 ```
@@ -42,7 +43,8 @@ ggplot(mtcars,
        aes(hp, mpg, color = factor(am))) +       
   geom_point() +
   geom_smooth(formula = y ~ x, method = "loess") +
-  theme(legend.position = 'bottom')
+  theme(legend.position = 'bottom') +
+  geom_smooth()
 ```
 
 I will now show you my actual data regarding my TFT games.
@@ -74,3 +76,51 @@ datatable(mtcars)
 ::: {.callout-warning collapse="true"}
 E' corretto affermare che il plot @fig-TFTstats hitta forte, ma non hitta forte quanto il codice stesso @lst-TFTstatsPlot
 :::
+
+
+# Summary
+
+```{r}
+#| label: tbl-tabellus
+#| tbl-cap: "Dataset di TFT gaming sesh number 5745"
+#| tbl-subcap: 
+#|   - "La tabella carina"
+#|   - "La tabella più carina"
+#| out-width: 100%  
+#| layout-ncol: 2
+
+
+kable(head(cars))
+
+kable(head(pressure))
+```
+
+```{r}
+#| label: fig-plottus
+#| column: screen-inset-shaded
+#| fig-cap: "Un dataset, modelli di TFT differenti" 
+#| fig-subcap:
+#|   - "I dati di TFT"
+#|   - "Polynomial TFT analysis"
+#| layout-ncol: 2
+#| fig-align: center
+
+ggplot(mtcars, aes(mpg, hp, size = gear)) +
+  geom_point()
+
+ggplot(mtcars, aes(mpg, hp)) +
+  geom_point(aes(size = gear)) +
+  geom_smooth()
+
+```
+
+```{r}
+#| layout-ncol: 2
+#| out-width: 180%  
+
+kable(head(cars))
+
+ggplot(mtcars, aes(mpg, hp)) +
+  geom_point(aes(size = gear)) +
+  geom_smooth()
+```
