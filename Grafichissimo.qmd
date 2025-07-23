@@ -1,0 +1,44 @@
+---
+title: "Gra-fico"
+data: 23/07/2025
+format: 
+  html:
+    self-contained: true
+    toc: true                 
+    toc-location: left      
+    theme:
+      light: minty 
+---
+
+```{r}
+#| echo: false
+#| out-width: 90%
+#| fig-align: center
+#| fig-cap: TFT random screenshot
+#| fig-cap-location: margin
+#| label: TFT1
+knitr::include_graphics("img/TFTlul.png")
+```
+
+```{r}
+#| echo: false
+data = read.csv("QuartoData/dataset.csv")
+library(ggplot2)
+```
+
+
+```{r}
+#| code-fold: true
+#| echo: true
+#| out-width: 90%
+#| fig-align: center
+#| fig-cap: Queste sono le mie stats di TFT plottate
+#| fig-cap-location: margin
+#| label: TFTstats
+#| code-line-numbers: "|2|3|4|5|6"
+ggplot(mtcars,                                   
+       aes(hp, mpg, color = factor(am))) +       
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess") +
+  theme(legend.position = 'bottom')
+```

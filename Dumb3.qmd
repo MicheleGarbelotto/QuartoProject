@@ -12,7 +12,6 @@ format:
     margin-width: 400px
     gutter-width: 1.5rem
 citation-location: margin
-lang: it      
 bibliography: references.bib
 
 ---

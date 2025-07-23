@@ -10,7 +10,7 @@ format:
     theme:
       light: minty 
       dark: superhero
-lang: it      
+lang: en     
 bibliography: references.bib
 ---
 
