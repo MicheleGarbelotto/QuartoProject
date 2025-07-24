@@ -1,6 +1,7 @@
 ---
 title: "Il Comitato Etico del Cheeseburger con Doppio Cheddar"
 format: revealjs
+self-contained: TRUE
 ---
 
 # Introduzione
