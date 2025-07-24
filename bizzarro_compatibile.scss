@@ -1,0 +1,106 @@
+
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-font-size-root:   34px;
+
+// headings
+$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-h1-font-size: 1.8em;
+$presentation-h2-font-size: 1.4em;
+$presentation-h3-font-size: 1.2em;
+
+// code 
+$code-block-font-size: 0.70em;
+
+$callout-style-font-size: .5em;
+$callout-style-font-weight: 400;
+
+$slide-logo-size: 200px;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+/* Bizzarrie aggiuntive */
+$bg-color: #4c7ade;
+$text-color: #fff42c;
+$accent-color: #f3522a;
+$link-color: #65f65b;
+$header-bg: #8725ff;
+
+.reveal {
+  background-color: $bg-color;
+  color: $text-color;
+
+  a {
+    color: $link-color;
+    text-decoration: underline wavy $accent-color;
+    &:hover {
+      color: $accent-color;
+      background-color: #ff00ff;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    color: $accent-color;
+    background-color: $header-bg;
+    padding: 0.3em;
+    border: 3px dashed $link-color;
+    text-align: center;
+  }
+
+  code {
+    background-color: #444;
+    color: #00ff00;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+  }
+
+  blockquote {
+    border-left: 5px solid $accent-color;
+    padding-left: 1em;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .controls {
+    filter: hue-rotate(180deg);
+  }
+
+  h1::after {
+    content: " 🧀✨";
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1; }
+  }
+
+  table {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px dotted $link-color;
+    th {
+      background-color: $header-bg;
+      color: $accent-color;
+    }
+    td {
+      background-color: #220044;
+      color: $text-color;
+    }
+  }
+
+  .callout {
+    border: 2px solid $accent-color;
+    background-color: rgba(255, 255, 0, 0.1);
+    color: $accent-color;
+  }
+}
