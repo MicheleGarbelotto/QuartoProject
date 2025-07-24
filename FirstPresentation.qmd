@@ -13,52 +13,94 @@ format:
     slide-number:  c/t
     show-slide-number: all
     theme: bizzarro_compatibile.scss
+    echo: fenced
 ---
 
 # Introduzione
+::: {.notes}
+Qui ricordati di parlare della seconda guerra mondiale
+:::
 
 ## Contesto
+::: {.notes}
+Qui ricordati di parlare della seconda guerra punicica
+:::
+
 Una storia eccessivamente bizzarra su etica, formaggio e misticismo gastronomico.
 
-## Obiettivo della presentazione
-Raccontare la nascita, le regole e i misteri del CEISCDC: Comitato Etico Internazionale per la Sperimentazione del Cheeseburger con Doppio Cheddar.
 
-
-
-# Le origini del comitato
-
-## Reykjavik, 2023
-::: {.incremental}
-
-In un fast food abbandonato nei ghiacci islandesi si incontrano:
-- 12 scienziati
-- 3 chef molecolari
-- 1 mimo francese
-- 1 lama tibetano (animale)
-
+# Code highlight
+::: {.notes}
+Qui ricordati di parlare della terza guerra mondiale
 :::
-## Fondazione del CEISCDC
-Nasce per regolamentare gli esperimenti con panini contenenti più di uno strato di cheddar.
 
+```{r}
+#| fig-align: center
+#| code-line-numbers: "|3|6-8|6,7|"
+#| echo: false
 
+library(tidyverse)            
+```
 
-# La minaccia del cheddar incontrollato
+```{r}
+#| fig-align: center
+#| code-line-numbers: "|3|6-8|6,7|"
+#| caption: relazione tra quantità di cheddar e contesto biopsicosociale
+#| cap-location: margin
 
-## L’incidente canadese
-::: {.incremental}
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")             
+```
 
-Uno studio sul "Triplo Cheddar Fuso con Bacon Liquido" causa:
-- deliri in latino
-- allucinazioni ricorrenti
-- euforia permanente
-
+# Create a scatterplot with a smoothing function
+```{r}
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() +
+  geom_smooth()
+```
+::: {.notes}
+Qui ricordati di parlare della seconda guerra punicica
 :::
-## Conseguenza
-Serve un comitato etico globale. Nasce il CEISCDC.
+
+# WOOOW: code animatio {auto-animate="true"}
+
+```{r}
+#| echo: true
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth(method = "lm")  
+```
 
 
+# Delayed fragment
 
-# Struttura del comitato
+```{r}
+#| fig-align: center
+#| output-location: column
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
+
+# Dealyed along the code column-fragment
+```{r}
+#| fig-align: center
+#| output-location: column-fragment
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
 
 ## Quattro dipartimenti principali
 ::: {.incremental}
@@ -72,11 +114,7 @@ Serve un comitato etico globale. Nasce il CEISCDC.
 ## Compiti dei dipartimenti
 Supervisionare gusto, dignità, effetti mentali e dimensione spirituale del panino.
 
-
-
-# L’esperimento Cheddar²
-
-## Il panino sperimentale
+# Il panino sperimentale
 ::: {.incremental}
 
 - Doppio cheddar stagionato 36 mesi  
@@ -85,43 +123,23 @@ Supervisionare gusto, dignità, effetti mentali e dimensione spirituale del pani
 - Carne allevata con jazz
 
 :::
-## Partecipanti
-::: {.incremental}
-- Test sul lattosio
-- Liberatoria in sanscrito
-:::
 
-
-# Risultati imprevisti
-
-## Esperienze dei soggetti
-::: {.incremental}
-- Nostalgia gastronomica ("ho assaggiato mia nonna")  
-- Comunicazione con piccioni  
-- Apparizione del "Santo Cheeseburger Celeste"
-::: 
-## Reazione del comitato
-::: {.incremental}
-- Fondazione di un culto
-- Esperimento sospeso per eccessiva trascendenza
-:::
-
-
-# Nuove linee guida etiche
-
-## Regole aggiornate
-::: {.incremental}
-Cheeseburger con doppio cheddar ammessi solo se:
-- accompagnati da decotto di salvia
-- seguiti da meditazione con chef stellato
-
-::: 
-## Nuova sede
-Un food truck alimentato a burro chiarificato.
-
-## Motto
+# Motto
 **"Semel in vita, bis in cheddar"**  
 (*Una volta nella vita, due volte nel cheddar*)
+
+Inoltre: 
+::: aside
+Fear leads to panic, panic leads to pain
+
+Pain leads to anger, anger leads to hate
+
+Yeah, yeah, yeah, yeah, ah, ah, ah, ah
+
+Yeah, yeah, yeah, yeah, ah, ah, ah, ah
+
+[Danny Nedelko](https://youtu.be/QkF_G-RF66M?si=F11TuQYUtWVz0L9G)
+:::
 
 
 # Conclusione {.scrollable .smaller footer="false"}
@@ -154,8 +172,6 @@ Cheeseburger con doppio cheddar percepito (da te osservatore) visivamente
 ::: {.fragment .fade-in-then-out}
 ![](img/cheese3.png){width="400" height="800" .absolute top=5 right=25 width="450" height="250"}
 :::
-
-
 
 # Ringraziamenti
 Grazie per l’attenzione.  

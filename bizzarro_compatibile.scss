@@ -28,7 +28,7 @@ $slide-logo-size: 200px;
 }
 
 /* Bizzarrie aggiuntive */
-$bg-color: #4c7ade;
+$bg-color: #92ade9;
 $text-color: #fff42c;
 $accent-color: #f3522a;
 $link-color: #65f65b;
@@ -56,7 +56,7 @@ $header-bg: #8725ff;
   }
 
   code {
-    background-color: #444;
+    background-color: #f79494;
     color: #00ff00;
     font-weight: bold;
     border-radius: 3px;
@@ -67,7 +67,7 @@ $header-bg: #8725ff;
     border-left: 5px solid $accent-color;
     padding-left: 1em;
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 122, 122, 0.1);
   }
 
   .controls {
@@ -86,7 +86,7 @@ $header-bg: #8725ff;
   }
 
   table {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(159, 31, 31, 0.05);
     border: 2px dotted $link-color;
     th {
       background-color: $header-bg;
