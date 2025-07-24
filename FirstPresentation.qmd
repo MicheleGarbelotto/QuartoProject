@@ -1,8 +1,8 @@
 ---
 title: "Il Comitato Etico del Cheeseburger con Doppio Cheddar"
 author:
-  name: "Michael Garbeloto Ph.D"
-  email: michale.garbeloto.burgerPhD@gmalius.comus
+  name: "Michail Garbov Ph.D"
+  email: "michail.garbov.burgerPhD@gmalius.comus"
 affiliation: "ARCA summer school"
 format: 
   revealjs: 
@@ -10,52 +10,41 @@ format:
     scrollable: true           
     footer: "Burger > pizza"
     incremental: true
-    slide-number:  c/t
+    slide-number: c/t
     show-slide-number: all
     theme: bizzarro_compatibile.scss
-    echo: fenced
+execute: 
+   echo: false
 ---
 
-# Introduzione
+# Evidenziando i codici del burger graph
 ::: {.notes}
-Qui ricordati di parlare della seconda guerra mondiale
-:::
-
-## Contesto
-::: {.notes}
-Qui ricordati di parlare della seconda guerra punicica
-:::
-
-Una storia eccessivamente bizzarra su etica, formaggio e misticismo gastronomico.
-
-
-# Code highlight
-::: {.notes}
-Qui ricordati di parlare della terza guerra mondiale
+Qui ricordati di parlare della terza guerra mondiale. Grafino non smooth, cavolo!
 :::
 
 ```{r}
 #| fig-align: center
-#| code-line-numbers: "|3|6-8|6,7|"
-#| echo: false
 
 library(tidyverse)            
 ```
 
 ```{r}
+#| output-location: column-fragment
 #| fig-align: center
-#| code-line-numbers: "|3|6-8|6,7|"
-#| caption: relazione tra quantità di cheddar e contesto biopsicosociale
-#| cap-location: margin
+#| fig-width: 12
+#| fig-height: 6
+#| code-line-numbers: "|1|2|3|"
+#| caption: Burger graph
+#| echo: true
 
 mtcars %>%                               
   ggplot( aes(mpg, hp, size = gear)) +   
-  geom_point() +                             
-  geom_smooth(method = "lm")             
+  geom_point()                        
 ```
 
-# Create a scatterplot with a smoothing function
+# Ma quanto smooth è questo grafico del doppio cheddar?
 ```{r}
+#| fig-align: center
 ggplot(mtcars,
        aes(mpg, hp, size = gear)) +
   geom_point() +
@@ -65,10 +54,30 @@ ggplot(mtcars,
 Qui ricordati di parlare della seconda guerra punicica
 :::
 
-# WOOOW: code animatio {auto-animate="true"}
+# Solo burger data {auto-animate="true"}
 
 ```{r}
-#| echo: true
+#| fig-align: center
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point()
+```
+
+# Cheddar incluso nel burger {auto-animate="true"}
+
+```{r}
+#| fig-align: center
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth()
+```
+
+# Chedar linearizzato {auto-animate="true"}
+```{r}
+#| fig-align: center
 # Create a scatterplot with a smoothing function
 ggplot(mtcars,
        aes(mpg, hp, size = gear)) +
@@ -77,29 +86,17 @@ ggplot(mtcars,
 ```
 
 
-# Delayed fragment
+# Un po' di delay per il burger graph {.smaller}
 
 ```{r}
 #| fig-align: center
-#| output-location: column
+#| output-location: fragment
 #| code-line-numbers: "|3|"
+#| echo: fenced
 
 mtcars %>%                               
   ggplot( aes(mpg, hp, size = gear)) +   
-  geom_point() +                             
-  geom_smooth(method = "lm")        
-```
-
-# Dealyed along the code column-fragment
-```{r}
-#| fig-align: center
-#| output-location: column-fragment
-#| code-line-numbers: "|3|"
-
-mtcars %>%                               
-  ggplot( aes(mpg, hp, size = gear)) +   
-  geom_point() +                             
-  geom_smooth(method = "lm")        
+  geom_point()                         
 ```
 
 ## Quattro dipartimenti principali
@@ -111,8 +108,6 @@ mtcars %>%
 4. **Sorveglianza Psico-Sensoriale (CSPS)**
 
 :::
-## Compiti dei dipartimenti
-Supervisionare gusto, dignità, effetti mentali e dimensione spirituale del panino.
 
 # Il panino sperimentale
 ::: {.incremental}
@@ -124,25 +119,58 @@ Supervisionare gusto, dignità, effetti mentali e dimensione spirituale del pani
 
 :::
 
-# Motto
-**"Semel in vita, bis in cheddar"**  
-(*Una volta nella vita, due volte nel cheddar*)
-
-Inoltre: 
-::: aside
-Fear leads to panic, panic leads to pain
-
-Pain leads to anger, anger leads to hate
-
-Yeah, yeah, yeah, yeah, ah, ah, ah, ah
-
-Yeah, yeah, yeah, yeah, ah, ah, ah, ah
-
-[Danny Nedelko](https://youtu.be/QkF_G-RF66M?si=F11TuQYUtWVz0L9G)
-:::
+# Cansone allegorico-sinfonica del burger doppio cheddar {.scrollable .smaller}
+Tissilawen hit^[Ascolta questa canzone Algerina [Amidinine](https://www.youtube.com/watch?v=edDU4ayrWzE&ab_channel=Alg%C3%A9rienne%F0%9F%87%A9%F0%9F%87%BF) by Tissilawen]
 
 
-# Conclusione {.scrollable .smaller footer="false"}
+::: aside 
+Traduzione italiana di "Amidinine" dei Tissilawen
+Amidinine annas, Taad eddounia
+O amici, il mondo è cambiato,
+Toussas koud wa stejid
+Tutto passa e tutto si rinnova.
+Essas ihane imannek, Ayoussas
+La sofferenza umilia la tua fede, oh fratello mio.
+
+Arrek′adem yeflass, Issan sa'dounia
+Le gambe tremano, la vita è dura.
+Terras wa′tribahou, Tiddas terakadem ayeflas
+Cammini nel fango, inciampi tra le difficoltà.
+Esmassinagh, Massas w djagh ibliss, Dakennas
+Ci hanno lasciati, ci hanno abbandonati al diavolo, tutti loro.
+
+(Ritornello)
+Amidinine annas, Taad eddounia
+O amici, il mondo è cambiato,
+Toussas koud wa stejid
+Tutto passa e tutto si rinnova.
+Essas ihane imannek, Ayoussas
+La sofferenza umilia la tua fede, oh fratello mio.
+
+Wesh naḥki wesh n'khali
+Cosa dovrei dire e cosa dovrei tacere?
+Ana fi galbi cha'let nar
+Nel mio cuore arde un fuoco.
+Wast ḥchaya seknetli
+Dentro le parole si è fatta silenziosa la mia voce,
+Besbeb ez′men el ghadar
+A causa dei tempi del tradimento.
+
+Ya li jralek ma jrali
+Tu che hai vissuto ciò che ho vissuto,
+Koli a′lech rani meḥtar
+Dimmi perché resto così confuso.
+W'dmou′i yechahdouli
+Le mie lacrime sono testimoni,
+Mel harqa y'silou ki l′mṭar
+Della bruciatura che cade come pioggia.
+
+[Amidinine](https://www.youtube.com/watch?v=edDU4ayrWzE&ab_channel=Alg%C3%A9rienne%F0%9F%87%A9%F0%9F%87%BF) by Tissilawen
+::: 
+
+
+# Conclusione {.scrollable .smaller}
+
 Dopo anni di sperimentazioni al limite dell’immaginabile, il Comitato Etico Internazionale per la Sperimentazione del Cheeseburger con Doppio Cheddar arrivò a un momento di profonda crisi interna. Nonostante il successo scientifico e l’espansione globale delle sue attività, qualcosa era cambiato. Alcuni membri iniziarono a chiedersi se fosse ancora etico spingere oltre i confini della fusione casearia. Gli ultimi esperimenti avevano prodotto effetti inspiegabili: soggetti che sviluppavano improvvisi legami emotivi col panino, panini che cambiavano posizione quando nessuno guardava, e un caso isolato in cui un cheeseburger sembrò ruotarsi verso una telecamera durante un’intervista.
 
 Questi segnali portarono il comitato a interrompere ogni attività. Per la prima volta dalla sua fondazione, il CEISCDC entrò in silenzio operativo. Nessun nuovo esperimento, nessuna nuova ricetta. I membri si ritirarono in una panetteria riconvertita a luogo di riflessione, evitando qualsiasi alimento fuso per quaranta giorni. Durante quel periodo emerse una consapevolezza comune: forse il problema non era il panino, ma la pretesa di dominarlo.
@@ -157,7 +185,7 @@ Ma una cosa è certa: da quel giorno, nessuno ha più osato creare un panino con
 
 # Foto cheeseburger doppio cheddar
 
-::: {.highlight-yellow}
+::: {.fragment .highlight-red}
 Cheeseburger con doppio cheddar percepito (da te osservatore) visivamente
 :::
 
@@ -174,8 +202,7 @@ Cheeseburger con doppio cheddar percepito (da te osservatore) visivamente
 :::
 
 # Ringraziamenti
-Grazie per l’attenzione.  
-Per comunicare col comitato, consultevi da soli.
+Cheddar.
 
 
 
