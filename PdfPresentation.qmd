@@ -1,0 +1,73 @@
+---
+title: "PdfPresentation"
+format: 
+  beamer:
+    slide-level: 3
+    theme: Berkeley
+    colortheme: dolphin
+---
+
+# sec 1
+
+```{r}
+#| include: false
+library(tidyverse)  
+library(knitr)
+```
+
+## sub
+
+### subsub
+
+:::: {.columns} 
+
+::: {.column width="40%"} 
+
+
+Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution.  
+
+::: 
+
+::: {.column width="60%"} 
+
+
+Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. 
+
+::: 
+
+::::
+
+## sub
+
+### subsub
+
+Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. 
+
+```{r}
+#| fig-align: center
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() +
+  geom_smooth()
+```
+
+# sec 2
+
+## sub
+
+### subsub
+
+Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. 
+
+```{r}
+kable(head(cars))
+```
+
+
+## sub
+
+### subsub
+
+Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Had arose guest visit going off child she new.
+
+

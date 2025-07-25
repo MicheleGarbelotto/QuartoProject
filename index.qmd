@@ -24,3 +24,5 @@ format:
 
 [Comitato etico di cheeseburger con doppio ceddar](FirstPresentation.html)
 
+[Questa è una presentazione pdf](PdfPresentation)
+

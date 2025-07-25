@@ -17,7 +17,9 @@ execute:
    echo: false
 ---
 
-# Evidenziando i codici del burger graph
+# Questa è la intro
+
+## Evidenziando i codici del burger graph
 ::: {.notes}
 Qui ricordati di parlare della terza guerra mondiale. Grafino non smooth, cavolo!
 :::
@@ -42,7 +44,7 @@ mtcars %>%
   geom_point()                        
 ```
 
-# Ma quanto smooth è questo grafico del doppio cheddar?
+## Ma quanto smooth è questo grafico del doppio cheddar?
 ```{r}
 #| fig-align: center
 ggplot(mtcars,
@@ -54,20 +56,22 @@ ggplot(mtcars,
 Qui ricordati di parlare della seconda guerra punicica
 :::
 
-# Solo burger data {auto-animate="true"}
+## {auto-animate="true"}
 
 ```{r}
 #| fig-align: center
+#| echo: true
 # Create a scatterplot with a smoothing function
 ggplot(mtcars,
        aes(mpg, hp, size = gear)) +
   geom_point()
 ```
 
-# Cheddar incluso nel burger {auto-animate="true"}
+## {auto-animate="true"}
 
 ```{r}
 #| fig-align: center
+#| echo: true
 # Create a scatterplot with a smoothing function
 ggplot(mtcars,
        aes(mpg, hp, size = gear)) +
@@ -75,10 +79,12 @@ ggplot(mtcars,
   geom_smooth()
 ```
 
-# Chedar linearizzato {auto-animate="true"}
+## {auto-animate="true"}
 ```{r}
 #| fig-align: center
+#| echo: true
 # Create a scatterplot with a smoothing function
+
 ggplot(mtcars,
        aes(mpg, hp, size = gear)) +
   geom_point() + 
@@ -86,7 +92,7 @@ ggplot(mtcars,
 ```
 
 
-# Un po' di delay per il burger graph {.smaller}
+## Un po' di delay per il burger graph {.smaller}
 
 ```{r}
 #| fig-align: center
@@ -99,6 +105,8 @@ mtcars %>%
   geom_point()                         
 ```
 
+# Basta grafici
+
 ## Quattro dipartimenti principali
 ::: {.incremental}
 
@@ -109,7 +117,7 @@ mtcars %>%
 
 :::
 
-# Il panino sperimentale
+## Il panino sperimentale
 ::: {.incremental}
 
 - Doppio cheddar stagionato 36 mesi  
@@ -119,7 +127,7 @@ mtcars %>%
 
 :::
 
-# Cansone allegorico-sinfonica del burger doppio cheddar {.scrollable .smaller}
+## Cansone allegorico-sinfonica del burger doppio cheddar {.scrollable}
 Tissilawen hit^[Ascolta questa canzone Algerina [Amidinine](https://www.youtube.com/watch?v=edDU4ayrWzE&ab_channel=Alg%C3%A9rienne%F0%9F%87%A9%F0%9F%87%BF) by Tissilawen]
 
 
@@ -169,7 +177,7 @@ Della bruciatura che cade come pioggia.
 ::: 
 
 
-# Conclusione {.scrollable .smaller}
+## Conclusione {.scrollable .smaller footer="false"}
 
 Dopo anni di sperimentazioni al limite dell’immaginabile, il Comitato Etico Internazionale per la Sperimentazione del Cheeseburger con Doppio Cheddar arrivò a un momento di profonda crisi interna. Nonostante il successo scientifico e l’espansione globale delle sue attività, qualcosa era cambiato. Alcuni membri iniziarono a chiedersi se fosse ancora etico spingere oltre i confini della fusione casearia. Gli ultimi esperimenti avevano prodotto effetti inspiegabili: soggetti che sviluppavano improvvisi legami emotivi col panino, panini che cambiavano posizione quando nessuno guardava, e un caso isolato in cui un cheeseburger sembrò ruotarsi verso una telecamera durante un’intervista.
 
@@ -183,7 +191,7 @@ Da allora, nessuno sa con certezza dove si trovino i membri. Alcuni dicono che s
 
 Ma una cosa è certa: da quel giorno, nessuno ha più osato creare un panino con più di due strati di formaggio.
 
-# Foto cheeseburger doppio cheddar
+## Foto cheeseburger doppio cheddar
 
 ::: {.fragment .highlight-red}
 Cheeseburger con doppio cheddar percepito (da te osservatore) visivamente
